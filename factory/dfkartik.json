@@ -1,0 +1,9 @@
+{
+	"name": "dfkartik",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "006f44dc-4a02-4644-84e2-49b76102acef",
+		"tenantId": "1d327772-bfff-4e47-bced-2c1fe2bcd875"
+	}
+}

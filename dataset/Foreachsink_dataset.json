@@ -15,6 +15,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().ds_file",
+					"type": "Expression"
+				},
 				"folderPath": "outputdir",
 				"fileSystem": "firstcont"
 			},

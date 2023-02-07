@@ -15,7 +15,7 @@
 				"fileSystem": "firstcont"
 			},
 			"columnDelimiter": ",",
-			"compressionCodec": "deflate",
+			"compressionCodec": "ZipDeflate",
 			"escapeChar": "\\",
 			"quoteChar": "\""
 		},

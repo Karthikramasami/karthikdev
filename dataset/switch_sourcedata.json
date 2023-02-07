@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"ds_file": {
+			"Ds_file": {
 				"type": "string"
 			}
 		},
@@ -16,7 +16,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@dataset().ds_file",
+					"value": "@dataset().Ds_file",
 					"type": "Expression"
 				},
 				"folderPath": "inputdir/Adworks/AdventureWorksLT2012.zip",

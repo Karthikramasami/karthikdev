@@ -19,7 +19,7 @@
 					"value": "@dataset().ds_file",
 					"type": "Expression"
 				},
-				"folderPath": "outputdir",
+				"folderPath": "outputdir/sales",
 				"fileSystem": "firstcont"
 			},
 			"columnDelimiter": ",",

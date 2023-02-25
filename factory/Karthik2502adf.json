@@ -1,0 +1,9 @@
+{
+	"name": "Karthik2502adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "06a01200-2a7d-4754-940c-07564d0682a2",
+		"tenantId": "b349f944-fad1-44b3-823a-ad85223f8ca2"
+	}
+}

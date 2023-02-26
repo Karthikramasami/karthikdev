@@ -192,7 +192,7 @@
 		"variables": {
 			"Color": {
 				"type": "String",
-				"defaultValue": "'Red'"
+				"defaultValue": "Red"
 			}
 		},
 		"annotations": []

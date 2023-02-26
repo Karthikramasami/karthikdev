@@ -8,12 +8,6 @@
 				"Color": "Red"
 			}
 		},
-		"parameters": {
-			"Color": {
-				"type": "string",
-				"defaultValue": "Red"
-			}
-		},
 		"annotations": [],
 		"type": "AzureTable",
 		"schema": [],

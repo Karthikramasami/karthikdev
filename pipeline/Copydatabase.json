@@ -113,10 +113,7 @@
 				"outputs": [
 					{
 						"referenceName": "Datatable",
-						"type": "DatasetReference",
-						"parameters": {
-							"Color": "Red"
-						}
+						"type": "DatasetReference"
 					}
 				]
 			},
@@ -142,7 +139,10 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureTableSource",
-						"azureTableSourceQuery": "",
+						"azureTableSourceQuery": {
+							"value": "@concat('Select * from Productdetails where color = ',variables('Color'))",
+							"type": "Expression"
+						},
 						"azureTableSourceIgnoreTableNotFound": false
 					},
 					"sink": {
@@ -163,13 +163,7 @@
 				"inputs": [
 					{
 						"referenceName": "Datatable",
-						"type": "DatasetReference",
-						"parameters": {
-							"Color": {
-								"value": "@pipeline().parameters.Color",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				],
 				"outputs": [

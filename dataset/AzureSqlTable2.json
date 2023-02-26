@@ -5,6 +5,12 @@
 			"referenceName": "AzureSqlDatabase3",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"Color": {
+				"type": "string",
+				"defaultValue": "Red"
+			}
+		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [

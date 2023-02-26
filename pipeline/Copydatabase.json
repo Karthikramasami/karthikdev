@@ -136,6 +136,10 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
+						"sqlReaderQuery": {
+							"value": "@string('Select * from SalesLT.Product\nWhere color = ''',pipeline().parameters.Color'''')",
+							"type": "Expression"
+						},
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
@@ -163,11 +167,20 @@
 				"outputs": [
 					{
 						"referenceName": "AzureTable2",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Color": "Red"
+						}
 					}
 				]
 			}
 		],
+		"parameters": {
+			"Color": {
+				"type": "String",
+				"defaultValue": "Red"
+			}
+		},
 		"annotations": []
 	}
 }

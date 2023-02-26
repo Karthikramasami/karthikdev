@@ -162,7 +162,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureTable1",
+						"referenceName": "AzureTable2",
 						"type": "DatasetReference"
 					}
 				]

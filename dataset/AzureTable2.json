@@ -1,0 +1,24 @@
+{
+	"name": "AzureTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureTableStorage3",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"Color": "Red"
+			}
+		},
+		"parameters": {
+			"Color": {
+				"type": "string",
+				"defaultValue": "Red"
+			}
+		},
+		"annotations": [],
+		"type": "AzureTable",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "Redtable"
+		}
+	}
+}

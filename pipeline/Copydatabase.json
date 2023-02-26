@@ -45,7 +45,10 @@
 				"inputs": [
 					{
 						"referenceName": "AzureSqlTable1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Color": "Red"
+						}
 					}
 				],
 				"outputs": [
@@ -136,10 +139,6 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
-						"sqlReaderQuery": {
-							"value": "@string('Select * from SalesLT.Product\nWhere color = ''',pipeline().parameters.Color'''')",
-							"type": "Expression"
-						},
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
@@ -161,16 +160,16 @@
 				"inputs": [
 					{
 						"referenceName": "AzureSqlTable1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Color": "Red"
+						}
 					}
 				],
 				"outputs": [
 					{
 						"referenceName": "AzureTable2",
-						"type": "DatasetReference",
-						"parameters": {
-							"Color": "Red"
-						}
+						"type": "DatasetReference"
 					}
 				]
 			}

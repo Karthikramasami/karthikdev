@@ -1,6 +1,11 @@
 {
 	"name": "parameterpipe",
 	"properties": {
+		"parameters": {
+			"Color": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }

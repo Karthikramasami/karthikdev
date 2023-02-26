@@ -1,0 +1,22 @@
+{
+	"name": "AzureSqlTable3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase4",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "SalesLT",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "newproduct",
+				"type": "Expression"
+			}
+		}
+	}
+}

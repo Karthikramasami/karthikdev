@@ -142,6 +142,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureTableSource",
+						"azureTableSourceQuery": "Select *\nFrom Productdetails \nWhere color ='",
 						"azureTableSourceIgnoreTableNotFound": false
 					},
 					"sink": {
@@ -165,7 +166,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"Color": {
-								"value": "@activity('Copy data1_copy1').output",
+								"value": "@pipeline().parameters.Color",
 								"type": "Expression"
 							}
 						}
@@ -174,7 +175,10 @@
 				"outputs": [
 					{
 						"referenceName": "AzureTable3",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Color": "Red"
+						}
 					}
 				]
 			}

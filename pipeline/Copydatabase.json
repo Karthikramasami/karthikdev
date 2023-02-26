@@ -142,7 +142,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureTableSource",
-						"azureTableSourceQuery": "Select *\nFrom Productdetails \nWhere color ='",
+						"azureTableSourceQuery": "",
 						"azureTableSourceIgnoreTableNotFound": false
 					},
 					"sink": {
@@ -191,10 +191,8 @@
 		},
 		"variables": {
 			"Color": {
-				"type": "Array",
-				"defaultValue": [
-					"'Red'"
-				]
+				"type": "String",
+				"defaultValue": "'Red'"
 			}
 		},
 		"annotations": []

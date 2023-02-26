@@ -140,7 +140,7 @@
 					"source": {
 						"type": "AzureTableSource",
 						"azureTableSourceQuery": {
-							"value": "@concat('Select * from Productdetails where color = ',variables('Color'))",
+							"value": "@concat('Select * from Prodcutdetails where color = ',variables('Color'))",
 							"type": "Expression"
 						},
 						"azureTableSourceIgnoreTableNotFound": false

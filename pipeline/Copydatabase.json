@@ -189,6 +189,14 @@
 				"defaultValue": "Red"
 			}
 		},
+		"variables": {
+			"Color": {
+				"type": "Array",
+				"defaultValue": [
+					"'Red'"
+				]
+			}
+		},
 		"annotations": []
 	}
 }

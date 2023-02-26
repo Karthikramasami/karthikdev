@@ -1,0 +1,15 @@
+{
+	"name": "AzureTable3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureTableStorage4",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureTable",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "Redtable"
+		}
+	}
+}

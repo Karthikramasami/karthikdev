@@ -113,16 +113,19 @@
 				"outputs": [
 					{
 						"referenceName": "Datatable",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Color": "Red"
+						}
 					}
 				]
 			},
 			{
-				"name": "Copy data1_copy2",
+				"name": "Copy data1_copy1_copy1",
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Copy data1",
+						"activity": "Copy data1_copy1",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -138,9 +141,8 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "AzureSqlSource",
-						"queryTimeout": "02:00:00",
-						"partitionOption": "None"
+						"type": "AzureTableSource",
+						"azureTableSourceIgnoreTableNotFound": false
 					},
 					"sink": {
 						"type": "AzureTableSink",
@@ -159,7 +161,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "AzureSqlTable1",
+						"referenceName": "Datatable",
 						"type": "DatasetReference",
 						"parameters": {
 							"Color": "Red"
@@ -168,7 +170,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureTable2",
+						"referenceName": "AzureTable3",
 						"type": "DatasetReference"
 					}
 				]

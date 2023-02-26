@@ -164,7 +164,10 @@
 						"referenceName": "Datatable",
 						"type": "DatasetReference",
 						"parameters": {
-							"Color": "Red"
+							"Color": {
+								"value": "@activity('Copy data1_copy1').output",
+								"type": "Expression"
+							}
 						}
 					}
 				],

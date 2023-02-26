@@ -5,12 +5,6 @@
 			"referenceName": "AzureTableStorage4",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"Color": {
-				"type": "string",
-				"defaultValue": "Red"
-			}
-		},
 		"annotations": [],
 		"type": "AzureTable",
 		"schema": [],

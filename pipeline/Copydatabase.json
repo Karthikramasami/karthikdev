@@ -169,10 +169,7 @@
 				"outputs": [
 					{
 						"referenceName": "AzureTable3",
-						"type": "DatasetReference",
-						"parameters": {
-							"Color": "Red"
-						}
+						"type": "DatasetReference"
 					}
 				]
 			}

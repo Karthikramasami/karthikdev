@@ -2,15 +2,15 @@
 	"name": "DelimitedText2",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureBlobStorage1",
+			"referenceName": "gen3",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
-				"container": "migratecontainer"
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "migratecontainer"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

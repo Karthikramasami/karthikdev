@@ -49,19 +49,19 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText1",
+						"referenceName": "sourcedatasetwithblob",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "DelimitedText2",
+						"referenceName": "sourcedatasetwithblob",
 						"type": "DatasetReference"
 					}
 				]
 			},
 			{
-				"name": "Copy data1_copy1",
+				"name": "Copy data2",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -107,13 +107,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText1",
+						"referenceName": "sourcedatasetwithblob",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "DelimitedText2",
+						"referenceName": "sourcedatasetwithblob",
 						"type": "DatasetReference"
 					}
 				]

@@ -2,16 +2,17 @@
 	"name": "sourcedatasetwithblob",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "Azureoldblobls",
+			"referenceName": "Azurenewgen2ls",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
+				"type": "AzureBlobFSLocation",
 				"fileName": "Test.txt",
-				"container": "migratecontainer"
+				"folderPath": "rawkarthik",
+				"fileSystem": "migratecontainer"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

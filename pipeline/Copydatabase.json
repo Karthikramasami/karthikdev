@@ -17,13 +17,12 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
-						"sqlReaderQuery": "Select ProductID , Name, color, Size \nFrom [SalesLT].[Product]\nWhere color in ('Black', 'Red');",
+						"sqlReaderQuery": "select ProductID, Color, Size, Weight\nfrom [SalesLT].[Product]\nWhere color= 'Red';",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
 					"sink": {
 						"type": "AzureSqlSink",
-						"preCopyScript": "TRUNCATE TABLE [SalesLT].[newproduct];",
 						"writeBehavior": "insert",
 						"sqlWriterUseTableLock": false,
 						"tableOption": "autoCreate",
@@ -41,7 +40,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "AzureSqlTable1",
+						"referenceName": "AzureSqlTable2",
 						"type": "DatasetReference",
 						"parameters": {
 							"Color": "Red"
@@ -50,18 +49,12 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSqlTable3",
+						"referenceName": "AzureSqlTable4",
 						"type": "DatasetReference"
 					}
 				]
 			}
 		],
-		"parameters": {
-			"Color": {
-				"type": "String",
-				"defaultValue": "Red"
-			}
-		},
 		"variables": {
 			"Color": {
 				"type": "String",

@@ -1,0 +1,9 @@
+{
+	"name": "migratedf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "937417d4-2e1b-45f1-93bc-2cdfc9f93b5c",
+		"tenantId": "b349f944-fad1-44b3-823a-ad85223f8ca2"
+	}
+}

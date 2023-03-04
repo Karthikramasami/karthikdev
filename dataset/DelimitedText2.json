@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"folderPath": "rawkk",
 				"fileSystem": "migratecontainer"
 			},
 			"columnDelimiter": ",",
